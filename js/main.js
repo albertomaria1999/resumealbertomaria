@@ -68,14 +68,33 @@ $(window).on('load', function() {
 	});
 
 
+	/* Carrusel de lenguajes de programación */
+	$('.languages-carousel').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplayTimeout: 2000,
+		autoplayHoverPause: true,
+		margin: 15,
+		nav: true,
+		navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 3
+			},
+			1000: {
+				items: 3
+			}
+		}
+	});
+
 	/*------------------
 		Popup
 	--------------------*/
-	$('.portfolio-item .port-pic').magnificPopup({
-		type: 'image',
-		mainClass: 'img-popup-warp',
-		removalDelay: 500,
-	});
+	// Eliminado magnificPopup para evitar efecto de zoom
 
 
 
@@ -137,4 +156,3 @@ if($().circleProgress){
 }
 
 })(jQuery);
-
