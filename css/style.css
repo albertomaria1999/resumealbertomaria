@@ -613,6 +613,14 @@ ol {
     margin-bottom: 40px;
 }
 
+.portfolio-section .portfolio-warp .row {
+    margin-bottom: 30px;
+}
+
+.portfolio-section .portfolio-warp .row:last-child {
+    margin-bottom: 0;
+}
+
 .portfolio-section .portfolio-item {
     margin-bottom: 30px;
     background: rgba(255, 255, 255, 0.95);
@@ -697,40 +705,25 @@ ol {
     font-size: 14px;
 }
 
-/* Responsive */
+/* Margen entre filas del portfolio */
+.portfolio-warp {
+    margin-bottom: 40px;
+}
+
+.portfolio-warp.mb-40 {
+    margin-bottom: 40px !important;
+}
+
+/* Responsive para el margen entre filas */
 @media (max-width: 767px) {
-    .portfolio-section {
-        padding: 80px 0;
+    .portfolio-warp.mb-40 {
+        margin-bottom: 30px !important;
     }
-    
-    .portfolio-section .container-fluid {
-        padding: 0 30px;
-    }
-    
-    .portfolio-section .portfolio-item {
-        margin-bottom: 25px;
-        padding: 0 15px;
-    }
-    
-    .portfolio-section .portfolio-item .port-pic {
-        height: 180px;
-    }
-    
-    .portfolio-section .portfolio-item h2 {
-        padding: 20px 0;
-        font-size: 18px;
-    }
-    
-    .portfolio-section .portfolio-item .button-container {
-        padding: 10px 0;
-    }
-    
-    .portfolio-section .portfolio-item a {
-        padding: 8px 20px;
-        font-size: 13px;
-        margin: 10px auto 0;
-        max-width: 250px;
-    }
+}
+
+/* Resetear márgenes del row para evitar conflictos */
+.portfolio-warp .row {
+    margin-bottom: 0 !important;
 }
 
 .portfolio-warp {
@@ -846,6 +839,39 @@ ol {
 	line-height: normal;
 }
 
+.footer-section {
+    background: #f8f9fa;
+    padding: 40px 0;
+}
+
+.footer-section .copyright {
+    font-size: 16px;
+    color: #40424a;
+    line-height: 1.6;
+}
+
+.footer-section .copyright a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-section .copyright a:hover {
+    color: #0056b3;
+}
+
+/* Responsive para el footer */
+@media (max-width: 767px) {
+    .footer-section {
+        padding: 30px 0;
+    }
+    
+    .footer-section .copyright {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
 /*---------------------
 	Home 2 Style
 -----------------------*/
@@ -930,7 +956,7 @@ ol {
 	border: none;
 }
 
-.home-two-style .footer-section {
+.home-two-style .header-section {
 	background: #3a4db4;
 }
 
@@ -1613,6 +1639,172 @@ ol {
     
     .languages-carousel .owl-stage-outer {
         padding: 0 30px;
+    }
+}
+
+/* Iconos de redes sociales */
+.portfolio-section .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.portfolio-section .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px;
+    cursor: default;
+    pointer-events: none;
+}
+
+.portfolio-section .social-icons a:hover {
+    background: #0056b3;
+    transform: none;
+}
+
+.portfolio-section .social-icons i {
+    font-size: 18px;
+    line-height: 1;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive para los iconos */
+@media (max-width: 767px) {
+    .portfolio-section .social-icons {
+        gap: 15px;
+    }
+    
+    .portfolio-section .social-icons a {
+        width: 35px;
+        height: 35px;
+        padding: 6px;
+    }
+    
+    .portfolio-section .social-icons i {
+        font-size: 16px;
+        line-height: 1;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* Sección de educación */
+.education-section {
+    padding-top: 150px;
+}
+
+.education-section .section-title {
+    margin-bottom: 30px;
+}
+
+.education-section .section-title h2 {
+    margin-bottom: 110px;
+    padding-top: 20px;
+}
+
+/* Responsive para la sección de educación */
+@media (max-width: 767px) {
+    .education-section {
+        padding-top: 120px;
+    }
+    
+    .education-section .section-title h2 {
+        margin-bottom: 80px;
+        padding-top: 15px;
+    }
+}
+
+/* Badge de estado activo */
+.portfolio-section .badge-container {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.portfolio-section .badge {
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.portfolio-section .badge-success {
+    background: #28a745;
+    color: white;
+}
+
+.portfolio-section .badge-danger {
+    background: #dc3545;
+    color: white;
+}
+
+/* Responsive para el badge */
+@media (max-width: 767px) {
+    .portfolio-section .badge {
+        padding: 3px 8px;
+        font-size: 10px;
+    }
+}
+
+/* Tarjetas de Community Manager */
+.portfolio-section .portfolio-item {
+    padding: 15px;
+}
+
+.portfolio-section .portfolio-item .port-pic {
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.portfolio-section .portfolio-item h2 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.portfolio-section .badge-container {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.portfolio-section .social-icons {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.portfolio-section .social-icons i {
+    font-size: 20px;
+    margin: 0 8px;
+    color: #40424a;
+}
+
+/* Responsive para las tarjetas de Community Manager */
+@media (max-width: 767px) {
+    .portfolio-section .portfolio-item .port-pic {
+        height: 180px;
+    }
+    
+    .portfolio-section .portfolio-item h2 {
+        font-size: 16px;
+    }
+    
+    .portfolio-section .social-icons i {
+        font-size: 18px;
+        margin: 0 6px;
     }
 }
 
