@@ -8,6 +8,10 @@
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
+html {
+    font-size: 80%; /* Reducción del 20% en el tamaño de fuente base */
+}
+
 html,
 body {
 	height: 100%;
