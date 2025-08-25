@@ -90,7 +90,7 @@ ol {
 	height: 2px;
 	left: 0;
 	bottom: 0;
-	background: #40424a;
+	background: #741579;
 }
 
 /* Eliminado la clase set-bg y sus efectos */
@@ -159,22 +159,22 @@ ol {
 /* Site Buttons */
 .site-btn {
 	display: inline-block;
+	background: #741579;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 12px 30px;
+	border-radius: 50px;
 	text-transform: uppercase;
-	font-size: 12px;
-	min-width: 213px;
-	min-height: 20px;
-	text-align: center;
-	padding: 20px 10px 15px;
-	position: relative;
-	background-color: #fff;
-	margin-right: 10px;
-	border: 2px solid #40424a;
-	color: #40424a;
-	font-weight: 700;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 .site-btn:hover {
-	color: #40424a;
+	color: #fff;
+	background: #5a1260;
 }
 
 .circle-progress {
@@ -300,14 +300,14 @@ ol {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background: #40424a;
+	background: #741579;
 }
 
 .bar-inner span {
 	position: absolute;
 	right: 0;
 	bottom: -30px;
-	color: #40424a;
+	color: #741579;
 	font-weight: 600;
 }
 
@@ -336,7 +336,7 @@ ol {
 	display: inline-block;
 	margin-right: 18px;
 	border-radius: 12px;
-	background: #40424a;
+	background: #741579;
 }
 
 .language-progress .lan-prog span.fade-ele {
@@ -366,6 +366,11 @@ ol {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+.social-links a:hover {
+	background: #741579;
+	border-color: #741579;
 }
 
 /*---------------------
@@ -566,7 +571,7 @@ ol {
 }
 
 .review-slider .owl-dots .owl-dot.active {
-	background: #40424a;
+	background: #741579;
 }
 
 .single-review .qut {
@@ -692,7 +697,7 @@ ol {
     font-size: 14px;
     font-weight: 500;
     transition: all 0.3s ease;
-    background: #007bff;
+    background: #741579;
     border-radius: 25px;
     text-align: center;
     max-width: 300px;
@@ -700,7 +705,7 @@ ol {
 
 .portfolio-section .portfolio-item a:hover {
     color: white;
-    background: #0056b3;
+    background: #5a1260;
     transform: none;
 }
 
@@ -774,6 +779,7 @@ ol {
 	opacity: 0.8;
 	height: 100%;
 	top: 0;
+	background: rgba(116, 21, 121, 0.8);
 }
 
 /* Eliminado cualquier efecto de overlay */
@@ -1451,15 +1457,15 @@ ol {
     transition: all 0.3s ease;
     display: block;
     margin: 0 auto;
-    background: #007bff;
+    background: #741579;
     color: white;
     font-weight: 500;
 }
 
 .education-card .btn:hover {
-    background: #0056b3;
+    background: #5a1260;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(116, 21, 121, 0.3);
 }
 
 /* Responsive design */
