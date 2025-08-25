@@ -1818,6 +1818,28 @@ ol {
     }
 }
 
+/* Estilos para iconos */
+.fa,
+.fas,
+.fab,
+.fa-solid,
+.fa-brands,
+.card-icon,
+.social-links a i {
+    color: #741579;
+}
+
+/* Asegurar que los iconos en botones mantengan el color blanco */
+.btn i,
+.site-btn i {
+    color: #fff !important;
+}
+
+/* Mantener el color morado al hacer hover en los enlaces sociales */
+.social-links a:hover i {
+    color: #5a1260; /* Un tono más oscuro para el hover */
+}
+
 /* ===========================
   Responsive
 ==============================*/
