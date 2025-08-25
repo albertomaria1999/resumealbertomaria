@@ -410,18 +410,18 @@ ol {
 }
 
 .hero-text h2 {
-	font-size: 42px; /* Tamaño reducido del nombre */
+    font-size: 72px; /* Aumentado de 42px */
     margin-bottom: 15px;
     font-weight: 700;
     color: #40424a;
 }
 
 .typed {
-    font-size: 18px; /* Tamaño reducido del texto mecanografiado */
-    color: #808181;
+    font-size: 28px; /* Aumentado de 18px */
+    color: #666;
     font-weight: 400;
+    margin-bottom: 40px;
     display: block;
-    margin-top: 10px;
 }
 
 .hero-image {
@@ -450,6 +450,39 @@ ol {
 
 .hero-info ul li:last-child {
 	margin-bottom: 0;
+}
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 1199px) {
+    .hero-text h2 {
+        font-size: 60px;
+    }
+    
+    .typed {
+        font-size: 24px;
+    }
+}
+
+/* Ajustes para tablets */
+@media (max-width: 991px) {
+    .hero-text h2 {
+        font-size: 48px;
+    }
+    
+    .typed {
+        font-size: 20px;
+    }
+}
+
+/* Ajustes para móviles */
+@media (max-width: 767px) {
+    .hero-text h2 {
+        font-size: 36px;
+    }
+    
+    .typed {
+        font-size: 18px;
+    }
 }
 
 /*---------------------
@@ -1424,7 +1457,7 @@ ol {
 
 .education-card .card-icon {
     font-size: 36px;
-    color: #007bff;
+    color: #741579;
     margin-bottom: 15px;
     text-align: center;
     display: block;
@@ -1532,8 +1565,8 @@ ol {
     margin-bottom: 15px;
     border-radius: 15px;
     padding: 20px;
-    background: #007bff;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+    background: #741579;
+    box-shadow: 0 4px 15px rgba(116, 21, 121, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1551,8 +1584,8 @@ ol {
     margin-bottom: 15px;
     border-radius: 15px;
     padding: 20px;
-    background: #007bff;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+    background: #741579;
+    box-shadow: 0 4px 15px rgba(116, 21, 121, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1560,7 +1593,7 @@ ol {
 
 .languages-carousel .fact-box img:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.2);
+    box-shadow: 0 6px 20px rgba(116, 21, 121, 0.2);
 }
 
 .languages-carousel .fact-box h2 {
