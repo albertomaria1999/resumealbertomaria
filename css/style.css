@@ -1840,6 +1840,40 @@ ol {
     color: #5a1260; /* Un tono más oscuro para el hover */
 }
 
+/* Estilos para enlaces */
+a,
+a:link,
+a:visited,
+.hero-info a,
+.hero-info a:link,
+.hero-info a:visited,
+.hero-info a[href^="mailto:"],
+.hero-info a[href^="tel:"],
+a[href^="mailto:"],
+a[href^="tel:"] {
+    color: #741579;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:active,
+.hero-info a:hover,
+.hero-info a:active,
+a[href^="mailto:"]:hover,
+a[href^="tel:"]:hover {
+    color: #5a1260;
+    text-decoration: none;
+}
+
+/* Mantener el estilo original para los botones */
+.btn,
+.site-btn,
+.btn:hover,
+.site-btn:hover {
+    color: #fff !important;
+}
+
 /* ===========================
   Responsive
 ==============================*/
