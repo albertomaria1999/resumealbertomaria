@@ -399,37 +399,76 @@ ol {
 }
 
 /*---------------------
+	Extra section
+-----------------------*/
+.extra-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+/*---------------------
 	Hero section
 -----------------------*/
 .hero-section {
 	background: #f2f7f8;
+	padding: 80px 0 60px;
 }
 
 .hero-text {
-	margin-bottom: 80px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: 100%;
 }
 
 .hero-text h2 {
-    font-size: 72px; /* Aumentado de 42px */
-    margin: 0 0 15px 0; /* Ajuste del margen superior a 0 */
-    font-weight: 700;
-    color: #40424a;
+	font-size: 72px;
+	margin: 0 0 0 0 !important;
+	line-height: 1;
+	font-weight: 700;
+	color: #40424a;
 }
 
 .typed {
-    font-size: 28px; /* Aumentado de 18px */
-    color: #666;
-    font-weight: 400;
-    margin-bottom: 40px;
-    display: block;
+	font-size: 28px;
+	color: #666;
+	font-weight: 400;
+	margin-bottom: 10px;
+	display: block;
+	margin: 5px 0 0 0 !important;
+	line-height: 1.2;
 }
 
 .hero-image {
-	padding-top: 70px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	height: 100%;
+	padding-top: 0;
+	margin-bottom: 5px;  /* Reducir espacio debajo del texto mecanografiado */
+
 }
 
+.hero-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-info {
+    margin-top: 40px;
+    padding: 0;
+    width: 100%;
+}
+
+
 .hero-info h2 {
-	margin-bottom: 30px;
+	margin: 0 0 10px 0;
+    font-size: 24px;
 }
 
 .hero-info ul {
@@ -450,6 +489,62 @@ ol {
 
 .hero-info ul li:last-child {
 	margin-bottom: 0;
+}
+
+/* Tags Section */
+.tags-section {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px solid #e9ecef;
+}
+
+.tags-section h3 {
+    font-size: 18px;
+    color: #40424a;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tags-section h3 i {
+    color: #741579;
+    font-size: 16px;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #741579;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #741579;
+}
+
+/* Remove icon styles since we're not using them */
+.tag i {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .tags-section h3 {
+        font-size: 16px;
+    }
+    
+    .tag {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
 }
 
 /* Ajustes para pantallas medianas */
@@ -534,10 +629,38 @@ ol {
 /*---------------------
 	Resume section
 ----------------------*/
-.resume-section.with-bg {
-	background-image: url(../img/resume-bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+/* Education section with background */
+.education-section {
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 80px 0;
+    background-image: url(../img/resume-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Wrapper for education content */
+.education-section > .container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure proper spacing for the section title */
+.education-section .section-title {
+    margin-bottom: 40px;
+}
+
+/* Style for education cards */
+.education-cards {
+    position: relative;
+    z-index: 2;
 }
 
 .resume-list {
@@ -635,6 +758,7 @@ ol {
 	Portfolio section
 ----------------------*/
 .portfolio-section {
+    background-color: #ffffff;
     padding: 100px 0;
 }
 
@@ -651,7 +775,7 @@ ol {
 }
 
 .portfolio-section .section-title h3 i {
-    color: #007bff;
+    color: #741579;
     margin-right: 10px;
 }
 
@@ -772,6 +896,32 @@ ol {
     margin-bottom: 0 !important;
 }
 
+/* Portfolio button styles */
+.portfolio-section .button-container a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #741579;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    gap: 8px;
+}
+
+.portfolio-section .button-container a i {
+    color: white;
+    font-size: 14px;
+}
+
+.portfolio-section .button-container a:hover {
+    background-color: #5a1260;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .portfolio-warp {
 	padding: 0 60px;
 }
@@ -875,7 +1025,7 @@ ol {
 	Footer section
 -----------------------*/
 .footer-section {
-	background: #40424a;
+    background: #ffffff;
 	padding: 20px 0;
 }
 
@@ -887,7 +1037,7 @@ ol {
 }
 
 .footer-section {
-    background: #f8f9fa;
+    background-color: #ffffff;
     padding: 40px 0;
 }
 
@@ -1537,7 +1687,8 @@ ol {
 }
 
 .languages-carousel .fact-box {
-    background: white;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     border-radius: 15px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.3s ease;
@@ -1749,7 +1900,7 @@ ol {
 
 /* Sección de educación */
 .education-section {
-    padding-top: 150px;
+    padding: 80px 0;
 }
 
 .education-section .section-title {
@@ -1757,19 +1908,19 @@ ol {
 }
 
 .education-section .section-title h2 {
-    margin-bottom: 110px;
-    padding-top: 20px;
+    margin-bottom: 60px;
+    padding-top: 0;
 }
 
 /* Responsive para la sección de educación */
 @media (max-width: 767px) {
     .education-section {
-        padding-top: 120px;
+        padding: 60px 0;
     }
     
     .education-section .section-title h2 {
-        margin-bottom: 80px;
-        padding-top: 15px;
+        margin-bottom: 40px;
+        padding-top: 0;
     }
 }
 
@@ -2150,3 +2301,28 @@ a[href^="tel:"]:hover {
         font-size: 16px;
     }
 }
+
+/* Colocar "Información General" justo debajo del párrafo del hero */
+@media (min-width: 1200px) {
+	.hero-info{
+	  margin-top: -520px !important; /* Súbelo. Ajusta a -120 / -160 si hace falta */
+	  padding-top: 0;
+	}
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199px) {
+	.hero-info{
+	  margin-top: -280px !important; /* Un poco menos en pantallas medianas */
+	}
+  }
+  
+  @media (max-width: 991px) {
+	.hero-info{
+	  margin-top: 20px !important;  /* En tablet/móvil que fluya normal */
+	}
+  }
+  
+  /* Un poco de orden fino (opcional) */
+  .hero-info h2 { margin-bottom: 10px; }
+  .hero-info ul { margin: 0; }
+  
