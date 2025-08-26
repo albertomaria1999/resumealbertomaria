@@ -411,7 +411,7 @@ ol {
 
 .hero-text h2 {
     font-size: 72px; /* Aumentado de 42px */
-    margin-bottom: 15px;
+    margin: 0 0 15px 0; /* Ajuste del margen superior a 0 */
     font-weight: 700;
     color: #40424a;
 }
